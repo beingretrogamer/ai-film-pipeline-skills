@@ -1,0 +1,21 @@
+{
+  "project_name": "Alphabet Zoo",
+  "backend": "fal",
+  "video": {
+    "provider": "fal",
+    "model": "bytedance/seedance-2.5/text-to-video",
+    "fallback_models": ["bytedance/seedance-2.5/reference-to-video"],
+    "default_resolution": "720p",
+    "default_aspect": "9:16",
+    "max_clip_seconds": 28,
+    "native_audio": true
+  },
+  "image": {
+    "character_sheet": "fal-ai/flux/dev",
+    "location": null,
+    "general": null
+  },
+  "iteration_limit": 12,
+  "cli_ready": false,
+  "notes": "Kids educational series. Prefer soft lighting, rounded characters, native audio for chants. Use reference-to-video once passports are locked and reference sheets exist."
+}
