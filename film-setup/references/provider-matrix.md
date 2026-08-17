@@ -15,6 +15,30 @@ Pre-production is always backend-agnostic. Only `film-generate` talks to a vendo
 
 **Rule of thumb:** Pick **one** primary video model for the entire film.
 
+## Music / song models (fal)
+
+Use these when you need a stronger melody or a locked song asset for a series.
+
+| Model | Best for | Notes |
+|-------|----------|-------|
+| **MiniMax Music 2.6 / Music 3** | Short vocal kids songs, chants, lyric-driven tracks | Recommended default upgrade path. Style + lyrics input. |
+| ElevenLabs Music | Higher polish, section control | More expensive per minute |
+| Lyria 2 / 3 | Structured full songs | Strong overall quality |
+| Seed Audio 1.0 | Scene + dialogue + light music | More cinematic than pure song |
+| Sonilo | Licensed / commercial-safe music | Good when rights clarity matters |
+
+### Seedance audio cost note
+
+On Seedance 2.5, `generate_audio: true|false` does **not** change price.  
+Token cost is driven only by resolution × duration × frame rate.  
+Leave native audio **on** by default. Turn it off only when you already have an external track you want to force.
+
+### Recommended music strategy for series work
+
+1. Iterate with Seedance native audio (free, joint generation).
+2. When a chant/song needs to be locked, generate it with MiniMax on fal.
+3. Feed the MiniMax track as an audio reference into Seedance reference-to-video for final lip-sync and timing.
+
 ## Image models for passports / grey sheets
 
 Need strong identity hold and clean neutral-grey background sheets.

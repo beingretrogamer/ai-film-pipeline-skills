@@ -8,7 +8,15 @@
     "default_resolution": "720p",
     "default_aspect": "9:16",
     "max_clip_seconds": 28,
-    "native_audio": true
+    "native_audio": true,
+    "generate_audio": true
+  },
+  "music": {
+    "provider": "fal",
+    "primary_model": "fal-ai/minimax-music/v2.6",
+    "fallback_models": ["fal-ai/elevenlabs/music", "minimax/music-3"],
+    "strategy": "native-first-then-minimax",
+    "notes": "Keep Seedance native audio on by default (no cost difference). Upgrade to MiniMax when the chant needs a stronger melody, then feed the track as audio reference."
   },
   "image": {
     "character_sheet": "fal-ai/flux/dev",
@@ -17,5 +25,5 @@
   },
   "iteration_limit": 12,
   "cli_ready": false,
-  "notes": "Kids educational series. Prefer soft lighting, rounded characters, native audio for chants. Use reference-to-video once passports are locked and reference sheets exist."
+  "notes": "Kids educational series. Prefer soft lighting, rounded characters. Native Seedance audio on by default. Use MiniMax for locked letter songs, then reference-to-video."
 }
