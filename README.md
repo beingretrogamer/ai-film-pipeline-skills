@@ -62,6 +62,16 @@ Pre-production never depends on a vendor. Only `film-generate` talks to a provid
 4. Everything is versioned and logged. An unlogged good shot is a shot you cannot reproduce.
 5. At attempt 15, stop blaming the prompt — simplify the shot.
 
+## Samples
+
+Real examples that show the full pipeline applied to concrete projects.
+
+| Sample | Type | Demonstrates |
+|--------|------|--------------|
+| [**Alphabet Zoo**](./samples/alphabet-zoo/) | Kids educational shorts series | Locked recurring host, letter-animal passports, 22-field shot cards, 15-block sing-along prompts, series scaling templates |
+
+The Alphabet Zoo sample is complete enough to generate Episode A immediately and then expand to the full alphabet using the included templates.
+
 ## Install
 
 ```bash
